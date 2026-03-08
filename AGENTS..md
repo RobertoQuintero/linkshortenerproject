@@ -1,0 +1,43 @@
+# Agent Instructions — Link Shortener Project
+
+This file is the root agent instructions document. It defines the coding standards, architecture decisions, and conventions all LLM agents must follow when assisting with this codebase.
+
+Detailed instructions are split into focused documents located in the `/docs` directory.
+
+> **CRITICAL — MANDATORY REQUIREMENT:**
+> You **MUST** read every relevant file in the `/docs` directory **BEFORE** generating, writing, or modifying ANY code — no exceptions. Skipping this step is not permitted under any circumstances. If you are unsure which docs apply, read all of them. Code written without first consulting the relevant `/docs` files is considered invalid and must be discarded and rewritten.
+
+---
+
+## Project Overview
+
+A full-stack link shortener web application built with the Next.js App Router. Users authenticate via Clerk, create short links stored in a Neon PostgreSQL database via Drizzle ORM, and are redirected when visiting a short URL.
+
+---
+
+## Instruction Documents
+
+| Document | Topic |
+|---|---|
+| [docs/tech-stack.md](docs/tech-stack.md) | All dependencies, versions, and when to use each |
+| [docs/project-structure.md](docs/project-structure.md) | Directory layout, file naming, and import conventions |
+| [docs/coding-standards.md](docs/coding-standards.md) | TypeScript, React, and Next.js coding rules |
+| [docs/database.md](docs/database.md) | Drizzle ORM schema, migrations, and query patterns |
+| [docs/ui-components.md](docs/ui-components.md) | shadcn/ui, Tailwind CSS v4, and styling conventions |
+| [docs/shadcn-ui-rules.md](docs/shadcn-ui-rules.md) | shadcn/ui usage rules — always use shadcn, never build custom components |
+| [docs/auth.md](docs/auth.md) | Clerk authentication patterns and route protection |
+
+---
+
+## Non-Negotiable Rules
+
+> **REMINDER:** All rules below assume you have already read the relevant `/docs` files. **Do not write a single line of code before doing so.**
+
+1. **TypeScript strict mode is always on.** Never use `any`. Prefer explicit return types on all exported functions.
+2. **Never install new dependencies** without explicit user approval.
+3. **Do not modify files inside `components/ui/`** — these are managed by the shadcn CLI.
+4. **All database access goes through `db/index.ts`.** Never instantiate a new Drizzle client elsewhere.
+5. **All schema definitions live in `db/schema.ts`.** Never define tables outside this file.
+6. **Environment variables are never hardcoded.** Always access them via `process.env`.
+7. **Use the `cn()` utility** from `@/lib/utils` for all conditional class name logic.
+8. **Do not add comments** to code unless the logic is genuinely non-obvious.
