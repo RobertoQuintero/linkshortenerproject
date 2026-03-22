@@ -1,3 +1,7 @@
+---
+description: Read this file before implementing any UI-related features or fixes. It defines the rules for using shadcn/ui components, adding new components, and composing UI elements in the project.
+---
+
 # shadcn/ui Component Rules
 
 ## Core Rule

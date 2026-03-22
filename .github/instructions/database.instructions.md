@@ -1,3 +1,6 @@
+---
+description: Read this file before implementing any database-related features or fixes. It defines the database stack, schema conventions, query patterns, and migration practices for the project.
+---
 # Database
 
 ## Stack

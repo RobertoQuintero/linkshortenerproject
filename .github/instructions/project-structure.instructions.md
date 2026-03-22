@@ -1,3 +1,6 @@
+---
+description: Read this file before implementing any features or fixes. It defines the overall project structure, directory layout, and key conventions for file naming, path aliases, component types, and co-location.
+---
 # Project Structure
 
 ## Directory Layout

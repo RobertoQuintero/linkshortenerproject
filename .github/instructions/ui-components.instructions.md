@@ -1,3 +1,7 @@
+---
+description: Read this file before implementing any UI-related features or fixes. It defines the component library, styling conventions, and best practices for building UI components in the project.
+---
+
 # UI Components & Styling
 
 ## Overview

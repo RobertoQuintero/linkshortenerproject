@@ -1,3 +1,6 @@
+---
+description: Read this file before implementing any authentication-related features or fixes. It defines the authentication provider, protected routes, and coding conventions for auth logic.
+---
 # Authentication
 
 ## Non-Negotiable Rules

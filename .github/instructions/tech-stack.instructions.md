@@ -1,3 +1,6 @@
+---
+description: Read this file before implementing any features or fixes. It defines the tech stack, core frameworks, database, authentication, UI, styling, and build tools for the project.
+---
 # Tech Stack
 
 ## Core Framework

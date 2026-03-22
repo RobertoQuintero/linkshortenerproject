@@ -1,3 +1,6 @@
+---
+description: Read this file before implementing any code-related features or fixes. It defines the TypeScript coding standards, React/Next.js conventions, error handling practices, and environment variable usage for the project.
+---
 # Coding Standards
 
 ## TypeScript
