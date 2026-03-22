@@ -41,3 +41,4 @@ A full-stack link shortener web application built with the Next.js App Router. U
 6. **Environment variables are never hardcoded.** Always access them via `process.env`.
 7. **Use the `cn()` utility** from `@/lib/utils` for all conditional class name logic.
 8. **Do not add comments** to code unless the logic is genuinely non-obvious.
+9. **Never use `middleware.ts`.** This file is deprecated in Next.js 16 (the version used in this project). All middleware/proxy logic must live in `proxy.ts` instead.

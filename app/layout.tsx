@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider, SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import "./globals.css";
+import { dark } from "@clerk/themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,12 +30,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ClerkProvider>
+        <ClerkProvider appearance={{ baseTheme: dark }}>
           <header className="flex items-center justify-between px-6 py-4">
             <h1 className="text-xl font-bold">Link Shortener</h1>
             <div className="flex items-center gap-2">
               <Show when="signed-out">
-                <SignInButton mode="modal">
+                <SignInButton mode="modal" >
                   <Button variant="outline">Sign In</Button>
                 </SignInButton>
                 <SignUpButton mode="modal">
